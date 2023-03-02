@@ -21,3 +21,11 @@ C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\obj\Debug\Windo
 C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\obj\Debug\Windows\ServiceWindow.g.cs
 C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\obj\Debug\FitnessClubRasima_Content.g.cs
 C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\obj\Debug\Windows\AddEditServiceWindow.g.cs
+C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\bin\Debug\EntityFramework.dll
+C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\bin\Debug\EntityFramework.xml
+C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\obj\Debug\Windows\AddEditServiceWindow.baml
+C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\obj\Debug\Windows\ServiceWindow.baml
+C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\obj\Debug\FitnessClubRasima.csproj.CopyComplete

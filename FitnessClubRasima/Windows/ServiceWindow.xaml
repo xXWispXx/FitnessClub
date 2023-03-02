@@ -30,7 +30,7 @@
                   Grid.Row="2"
                   Margin="5" 
                   d:ItemsSource="{d:SampleData ItemCount=5}"
-                  ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="lvService_SelectionChanged">
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled" >
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel/>
@@ -50,20 +50,23 @@
                                 <Image.Source>
                                     <Binding Path="Photo">
                                         <Binding.TargetNullValue>
-                                            <ImageSource>/Windows/resources/Background2.jpg</ImageSource>
+                                            <ImageSource>/Windows/resources/Nullservice.jpg</ImageSource>
                                         </Binding.TargetNullValue>
                                     </Binding>
                                 </Image.Source>
 
                             </Image>
 
-                            <TextBlock Text="{Binding NameService}"
+                            <TextBlock Text="{Binding Title}"
                                        FontSize="18"
                                        Margin="5 0 0 0"/>
-                            <TextBlock Text="{Binding PriceService}"
+                            <TextBlock Text="{Binding Cost}"
                                        FontSize="18"
                                        Margin="5 0 0 0"/>
                             <TextBlock Text="{Binding Description}"
+                                       FontSize="18"
+                                       Margin="5 0 0 0"/>
+                            <TextBlock Text="{Binding Time}"
                                        FontSize="18"
                                        Margin="5 0 0 0"/>
 

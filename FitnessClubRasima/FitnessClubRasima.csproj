@@ -195,7 +195,9 @@
     <Resource Include="Windows\resources\Background1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Windows\resources\Background2.jpg" />
+    <Resource Include="Windows\resources\Nullservice.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
