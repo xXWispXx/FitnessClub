@@ -1,0 +1,100 @@
+﻿<Window x:Class="FitnessClubRasima.Windows.AddEditServiceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FitnessClubRasima.Windows"
+        mc:Ignorable="d"
+        Title="AddEditServiceWindow" Height="800" Width="500">
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="resources/Background1.png" />
+        </Grid.Background>
+
+        <StackPanel>
+            <TextBlock x:Name="TblockTitle" 
+                       Text="Добавление услуги"
+                       FontSize="30"
+                       HorizontalAlignment="Center"
+                       Margin="0 30 0 0"/>
+
+            <Border BorderBrush="Black"
+                    BorderThickness="1"
+                    Width="200"
+                    Height="150"
+                    Margin="0 20 0 0">
+                <Image x:Name="ImgService" 
+                       Width="200"
+                       Height="150"/>
+            </Border>
+
+            <Button x:Name="BtnChooseImage"
+                    Content="Выбрать фото"
+                    FontSize="18"
+                    HorizontalAlignment="Center"
+                    Margin="0 5 0 0"
+                    Width="200"
+                    Height="30"
+                    Click="BtnChooseImage_Click"/>
+
+            <TextBlock Text="Введите наименование услуги"
+                       FontSize="18"
+                       HorizontalAlignment="Center"
+                       Margin="0 20 0 0"/>
+
+            <TextBox x:Name="TbNameService"
+                     FontSize="18"
+                     HorizontalAlignment="Center"
+                     Margin="0 8 0 0"
+                     Width="250"
+                     Height="30"/>
+
+            <TextBlock Text="Введите стоимость услуги"
+                       FontSize="18"
+                       HorizontalAlignment="Center"
+                       Margin="0 20 0 0"/>
+
+            <TextBox x:Name="TbPriceService"
+                     FontSize="18"
+                     HorizontalAlignment="Center"
+                     Margin="0 8 0 0"
+                     Width="250"
+                     Height="30"/>
+
+            <TextBlock Text="Введите продолжительность услуги"
+                       FontSize="18"
+                       HorizontalAlignment="Center"
+                       Margin="0 20 0 0"/>
+
+            <TextBox x:Name="TbTimeService"
+                     FontSize="18"
+                     HorizontalAlignment="Center"
+                     Margin="0 8 0 0"
+                     Width="250"
+                     Height="30"/>
+
+            <TextBlock Text="Введите описание услуги"
+                       FontSize="18"
+                       HorizontalAlignment="Center"
+                       Margin="0 20 0 0"/>
+
+            <TextBox x:Name="TbDescription"
+                     FontSize="18"
+                     HorizontalAlignment="Center"
+                     Margin="0 8 0 0"
+                     Width="250"
+                     Height="30"/>
+
+            <Button x:Name="BtnAddEditService"
+                    Content="Добавить услугу"
+                    FontSize="18"
+                    HorizontalAlignment="Center"
+                    Margin="0 100 0 0"
+                    Width="250"
+                    Height="30"
+                    Click="BtnAddEditService_Click"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
