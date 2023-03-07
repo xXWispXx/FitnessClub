@@ -58,7 +58,7 @@
     <Property Name="Cost" Type="decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="Time" Type="int" Nullable="false" />
     <Property Name="Description" Type="nvarchar" MaxLength="300" Nullable="false" />
-    <Property Name="PhotoPath" Type="binary" MaxLength="50" />
+    <Property Name="PhotoPath" Type="nvarchar" MaxLength="1000" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>

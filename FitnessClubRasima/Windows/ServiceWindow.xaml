@@ -10,7 +10,7 @@
     <Grid>
 
         <Grid.Background>
-            <ImageBrush ImageSource="resources/Background1.png" />
+            <ImageBrush ImageSource="resources/Background1.jpg" />
         </Grid.Background>
 
         <Grid.RowDefinitions>
@@ -25,6 +25,37 @@
                    FontSize="30"
                    FontWeight="Bold"
                    HorizontalAlignment="Center"/>
+
+        <WrapPanel Grid.Row="1"
+                   VerticalAlignment="Center">
+            
+            <TextBlock x:Name="TblSearch" Text="Поиск"
+                   FontSize="18"
+                   FontWeight="Bold"
+                   Margin="8 0 0 0"/>
+
+            <TextBox x:Name="TbSearch"
+                     FontSize="18"                   
+                     Margin="8 0 0 0"
+                     Width="200"
+                     Height="30" TextChanged="TbSearch_TextChanged"
+                     />
+            
+            <TextBlock 
+                   x:Name="TbSort"
+                   Text="Сортировка"
+                   FontSize="18"
+                   FontWeight="Bold"
+                   Margin="8 0 0 0"/>
+
+            <ComboBox x:Name="CmbSort"
+                     FontSize="18"                   
+                     Margin="8 0 0 0"
+                     Width="333"
+                     Height="30" SelectionChanged="CmbSort_SelectionChanged"
+                     />
+
+        </WrapPanel>
 
         <ListView x:Name="lvService"
                   Grid.Row="2"
@@ -48,7 +79,7 @@
                                    Height="150"
                                    Width="190">
                                 <Image.Source>
-                                    <Binding Path="Photo">
+                                    <Binding Path="PhotoPath">
                                         <Binding.TargetNullValue>
                                             <ImageSource>/Windows/resources/Nullservice.jpg</ImageSource>
                                         </Binding.TargetNullValue>

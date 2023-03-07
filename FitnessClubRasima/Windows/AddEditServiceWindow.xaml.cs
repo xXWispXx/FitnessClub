@@ -58,7 +58,7 @@ namespace FitnessClubRasima.Windows
 
             if (service.PhotoPath != null)
             {
-                using (MemoryStream stream = new MemoryStream(service.PhotoPath))
+                using (MemoryStream stream = new MemoryStream())
                 {
                     BitmapImage bitmapImage = new BitmapImage();
                     bitmapImage.BeginInit();
@@ -101,7 +101,7 @@ namespace FitnessClubRasima.Windows
                 editService.Description = TbDescription.Text;
                 if (pathImage != null)
                 {
-                    editService.PhotoPath = File.ReadAllBytes(pathImage);
+                    editService.PhotoPath = pathImage;
                 }
                 EFClass.context.SaveChanges();
                 MessageBox.Show("Услуга успешно изменена");
@@ -115,7 +115,7 @@ namespace FitnessClubRasima.Windows
                 service.Cost = Convert.ToDecimal(TbPriceService.Text);
                 service.Time = Convert.ToInt32(TbTimeService.Text);
                 service.Description = TbDescription.Text;
-                service.PhotoPath = File.ReadAllBytes(pathImage);
+                service.PhotoPath = pathImage;
 
                 EFClass.context.Service.Add(service);
                 EFClass.context.SaveChanges();

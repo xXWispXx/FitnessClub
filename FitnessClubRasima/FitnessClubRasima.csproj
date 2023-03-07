@@ -192,10 +192,7 @@
     <Folder Include="Pages\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Windows\resources\Background1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Windows\resources\Nullservice.jpg">
+    <Resource Include="Windows\resources\Background2.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
@@ -213,6 +210,8 @@
       <DependentUpon>FitnessDB.edmx</DependentUpon>
       <LastGenOutput>FitnessDB.cs</LastGenOutput>
     </Content>
+    <Resource Include="Windows\resources\Background1.jpg" />
+    <Resource Include="Windows\resources\Nullservice.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

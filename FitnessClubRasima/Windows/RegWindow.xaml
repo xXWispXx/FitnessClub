@@ -9,7 +9,7 @@
     <Grid>
 
         <Grid.Background>
-            <ImageBrush ImageSource="resources/Background1.png" />
+            <ImageBrush ImageSource="resources/Background2.jpg" />
         </Grid.Background>
 
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">

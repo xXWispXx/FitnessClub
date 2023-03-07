@@ -147,7 +147,7 @@
     <Property Name="Cost" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
     <Property Name="Time" Type="Int32" Nullable="false" />
     <Property Name="Description" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
-    <Property Name="PhotoPath" Type="Binary" MaxLength="50" FixedLength="true" />
+    <Property Name="PhotoPath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="OrderService" Relationship="FitnessClubRasimaModel.FK_OrderService_Service" FromRole="Service" ToRole="OrderService" />
     <NavigationProperty Name="TrainerService" Relationship="FitnessClubRasimaModel.FK_TrainerService_Service" FromRole="Service" ToRole="TrainerService" />
   </EntityType>
