@@ -19,9 +19,9 @@ using FitnessClubRasima.ClassHelper;
 namespace FitnessClubRasima.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для ServiceListWindow.xaml
+    /// Логика взаимодействия для ClientListListWindow.xaml
     /// </summary>
-    public partial class ServiceWindow : Window
+    public partial class ClientListWindow : Window
     {
         List<string> listSort = new List<string>()
         {
@@ -35,27 +35,27 @@ namespace FitnessClubRasima.Windows
             "По времени (По возрастанию)",
             "По времени (По убыванию)",
         };
-        public ServiceWindow()
+        public ClientListWindow()
         {
             InitializeComponent();
 
             CmbSort.ItemsSource = listSort;
             CmbSort.SelectedIndex = 0;
 
-            GetServiceList();
+            GetClientList();
         }
 
-        private void GetServiceList()
+        private void GetClientList()
         {
-            List<Service> serviceList = new List<Service>();
+            List<Client> clientList = new List<Client>();
 
-            serviceList = EFClass.context.Service.ToList();
+            clientList = EFClass.context.Client.ToList();
 
             //поиск, фильтрация и сортировка
 
             //поиск
             //Название
-            serviceList = serviceList.Where(i => i.Title.ToLower().Contains(TbSearch.Text.ToLower())).ToList();
+            clientList = clientList.Where(i => i.FirstName.ToLower().Contains(TbSearch.Text.ToLower())).ToList();
 
 
             //Описание
@@ -68,76 +68,76 @@ namespace FitnessClubRasima.Windows
             switch (selectedIndexCmb)
             {
                 case 0:
-                    serviceList = serviceList.OrderBy(i => i.ServiceID).ToList();
+                    clientList = clientList.OrderBy(i => i.ClientID).ToList();
                     break;
                 case 1:
-                    serviceList = serviceList.OrderBy(i => i.Title).ToList();
+                    clientList = clientList.OrderBy(i => i.FirstName).ToList();
                     break;
                 case 2:
-                    serviceList = serviceList.OrderByDescending(i => i.Title).ToList();
+                    clientList = clientList.OrderByDescending(i => i.LastName).ToList();
                     break;
                 case 3:
-                    serviceList = serviceList.OrderBy(i => i.Cost).ToList();
+                    clientList = clientList.OrderBy(i => i.Patronymic).ToList();
                     break;
                 case 4:
-                    serviceList = serviceList.OrderByDescending(i => i.Cost).ToList();
+                    clientList = clientList.OrderByDescending(i => i.).ToList();
                     break;
                 case 5:
-                    serviceList = serviceList.OrderBy(i => i.Description).ToList();
+                    clientList = clientList.OrderBy(i => i.Description).ToList();
                     break;
                 case 6:
-                    serviceList = serviceList.OrderByDescending(i => i.Description).ToList();
+                    clientList = clientList.OrderByDescending(i => i.Description).ToList();
                     break;
                 case 7:
-                    serviceList = serviceList.OrderBy(i => i.Time).ToList();
+                    clientList = clientList.OrderBy(i => i.Time).ToList();
                     break;
                 case 8:
-                    serviceList = serviceList.OrderByDescending(i => i.Time).ToList();
+                    clientList = clientList.OrderByDescending(i => i.Time).ToList();
                     break;
 
                 default:
-                    serviceList = serviceList.OrderBy(i => i.ServiceID).ToList();
+                    clientList = clientList.OrderBy(i => i.ClientID).ToList();
                     break;
             }
 
             //фильтрация
-            
-            lvService.ItemsSource = serviceList;
+
+            lvClient.ItemsSource = clientList;
         }
-        
-        private void BtnAddService_Click(object sender, RoutedEventArgs e)
+
+        private void BtnAddClient_Click(object sender, RoutedEventArgs e)
         {
             AddEditServiceWindow addEditServiceWindow = new AddEditServiceWindow();
             addEditServiceWindow.ShowDialog();
 
-            GetServiceList();
+            GetClientList();
         }
-        
-                private void BtnEditService_Click(object sender, RoutedEventArgs e)
-                {
-                    var button = sender as Button;
-                    if (button == null)
-                    {
-                        return;
-                    }
 
-                    var service = button.DataContext as Service;
+        private void BtnEditClient_Click(object sender, RoutedEventArgs e)
+        {
+            var button = sender as Button;
+            if (button == null)
+            {
+                return;
+            }
+
+            var service = button.DataContext as Service;
 
 
-                    AddEditServiceWindow addEditServiceWindow = new AddEditServiceWindow(service);
-                    addEditServiceWindow.ShowDialog();
+            AddEditServiceWindow addEditServiceWindow = new AddEditServiceWindow(service);
+            addEditServiceWindow.ShowDialog();
 
-                    GetServiceList(); 
-                }
+            GetClientList();
+        }
 
         private void TbSearch_TextChanged(object sender, TextChangedEventArgs e)
         {
-            GetServiceList();
+            GetClientList();
         }
 
         private void CmbSort_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            GetServiceList();
+            GetClientList();
         }
     }
 }

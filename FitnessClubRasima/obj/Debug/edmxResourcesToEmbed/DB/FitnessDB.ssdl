@@ -16,6 +16,7 @@
     <Property Name="DateOfBirth" Type="date" Nullable="false" />
     <Property Name="Address" Type="nvarchar" MaxLength="100" />
     <Property Name="GenderID" Type="int" Nullable="false" />
+    <Property Name="PhotoPath" Type="nvarchar" MaxLength="1000" />
   </EntityType>
   <EntityType Name="Employee">
     <Key>

@@ -21,6 +21,7 @@
           <Property Name="DateOfBirth" Type="date" Nullable="false" />
           <Property Name="Address" Type="nvarchar" MaxLength="100" />
           <Property Name="GenderID" Type="int" Nullable="false" />
+          <Property Name="PhotoPath" Type="nvarchar" MaxLength="1000" />
         </EntityType>
         <EntityType Name="Employee">
           <Key>
@@ -347,6 +348,7 @@
           <Property Name="DateOfBirth" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="GenderID" Type="Int32" Nullable="false" />
+          <Property Name="PhotoPath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Gender" Relationship="FitnessClubRasimaModel.FK_Client_Gender" FromRole="Client" ToRole="Gender" />
           <NavigationProperty Name="Order" Relationship="FitnessClubRasimaModel.FK_Order_Client" FromRole="Client" ToRole="Order" />
         </EntityType>
@@ -550,6 +552,7 @@
           <EntitySetMapping Name="Client">
             <EntityTypeMapping TypeName="FitnessClubRasimaModel.Client">
               <MappingFragment StoreEntitySet="Client">
+                <ScalarProperty Name="PhotoPath" ColumnName="PhotoPath" />
                 <ScalarProperty Name="GenderID" ColumnName="GenderID" />
                 <ScalarProperty Name="Address" ColumnName="Address" />
                 <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />

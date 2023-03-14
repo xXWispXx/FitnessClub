@@ -96,6 +96,7 @@
     <Property Name="DateOfBirth" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="GenderID" Type="Int32" Nullable="false" />
+    <Property Name="PhotoPath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Gender" Relationship="FitnessClubRasimaModel.FK_Client_Gender" FromRole="Client" ToRole="Gender" />
     <NavigationProperty Name="Order" Relationship="FitnessClubRasimaModel.FK_Order_Client" FromRole="Client" ToRole="Order" />
   </EntityType>

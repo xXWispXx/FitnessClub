@@ -28,6 +28,7 @@
     <EntitySetMapping Name="Client">
       <EntityTypeMapping TypeName="FitnessClubRasimaModel.Client">
         <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="PhotoPath" ColumnName="PhotoPath" />
           <ScalarProperty Name="GenderID" ColumnName="GenderID" />
           <ScalarProperty Name="Address" ColumnName="Address" />
           <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />

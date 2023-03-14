@@ -29,3 +29,5 @@ C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\bin\Debug\ru\En
 C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\obj\Debug\Windows\AddEditServiceWindow.baml
 C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\obj\Debug\Windows\ServiceWindow.baml
 C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\obj\Debug\FitnessClubRasima.csproj.CopyComplete
+C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\obj\Debug\Windows\ClientListWindow.g.cs
+C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\obj\Debug\Windows\ClientListWindow.baml
