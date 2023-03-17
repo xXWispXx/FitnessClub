@@ -64,6 +64,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ClassHelper\CartClass.cs" />
     <Compile Include="ClassHelper\EFClass.cs" />
     <Compile Include="DB\Client.cs">
       <DependentUpon>FitnessDB.tt</DependentUpon>
@@ -113,6 +114,9 @@
     <Compile Include="DB\TrainerService.cs">
       <DependentUpon>FitnessDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Windows\AddEditClientListWindow.xaml.cs">
+      <DependentUpon>AddEditClientListWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\AddEditServiceWindow.xaml.cs">
       <DependentUpon>AddEditServiceWindow.xaml</DependentUpon>
     </Compile>
@@ -140,6 +144,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Windows\AddEditClientListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\AddEditServiceWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

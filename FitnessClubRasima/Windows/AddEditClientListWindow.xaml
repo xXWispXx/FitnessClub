@@ -1,0 +1,112 @@
+﻿<Window x:Class="FitnessClubRasima.Windows.AddEditClientListWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FitnessClubRasima.Windows"
+        mc:Ignorable="d"
+        Title="AddEditClientListWindow" Height="1000" Width="500">
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="resources/Background2.jpg" />
+        </Grid.Background>
+
+        <StackPanel>
+            <TextBlock x:Name="TblockTitle" 
+                       Text="Добавление клиента"
+                       FontSize="30"
+                       HorizontalAlignment="Center"
+                       Margin="0 30 0 0"/>
+
+            <Border BorderBrush="Black"
+                    BorderThickness="1"
+                    Width="200"
+                    Height="150"
+                    Margin="0 20 0 0">
+                <Image x:Name="ImgService" 
+                       Width="200"
+                       Height="150"/>
+            </Border>
+
+            <Button x:Name="BtnChooseImage"
+                    Content="Выбрать фото"
+                    FontSize="18"
+                    HorizontalAlignment="Center"
+                    Margin="0 5 0 0"
+                    Width="200"
+                    Height="30"
+                    Click="BtnChooseImage_Click"/>
+
+            <TextBlock Text="Введите имя клиента"
+                       FontSize="18"
+                       HorizontalAlignment="Center"
+                       Margin="0 20 0 0"/>
+
+            <TextBox x:Name="TbFirstNameClient"
+                     FontSize="18"
+                     HorizontalAlignment="Center"
+                     Margin="0 8 0 0"
+                     Width="250"
+                     Height="30"/>
+
+            <TextBlock Text="Введите фамилию клиента"
+                       FontSize="18"
+                       HorizontalAlignment="Center"
+                       Margin="0 20 0 0"/>
+
+            <TextBox x:Name="TbLastNameClient"
+                     FontSize="18"
+                     HorizontalAlignment="Center"
+                     Margin="0 8 0 0"
+                     Width="250"
+                     Height="30"/>
+
+            <TextBlock Text="Введите отчество клиента"
+                       FontSize="18"
+                       HorizontalAlignment="Center"
+                       Margin="0 20 0 0"/>
+
+            <TextBox x:Name="TbPatronymicClient"
+                     FontSize="18"
+                     HorizontalAlignment="Center"
+                     Margin="0 8 0 0"
+                     Width="250"
+                     Height="30"/>
+
+            <TextBlock Text="Введите телефон клиента"
+                       FontSize="18"
+                       HorizontalAlignment="Center"
+                       Margin="0 20 0 0"/>
+
+            <TextBox x:Name="TbPhoneClient"
+                     FontSize="18"
+                     HorizontalAlignment="Center"
+                     Margin="0 8 0 0"
+                     Width="250"
+                     Height="30"/>
+
+            <TextBlock Text="Введите email клиента"
+                       FontSize="18"
+                       HorizontalAlignment="Center"
+                       Margin="0 20 0 0"/>
+
+            <TextBox x:Name="TbEmailClient"
+                     FontSize="18"
+                     HorizontalAlignment="Center"
+                     Margin="0 8 0 0"
+                     Width="250"
+                     Height="30"/>
+
+            <Button x:Name="BtnAddEditClient"
+                    Content="Добавить клиента"
+                    FontSize="18"
+                    HorizontalAlignment="Center"
+                    Margin="0 100 0 0"
+                    Width="250"
+                    Height="30"
+                    Click="BtnAddEditClient_Click"/>
+
+        </StackPanel>
+    </Grid>
+</Window>

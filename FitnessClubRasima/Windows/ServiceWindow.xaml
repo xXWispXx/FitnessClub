@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FitnessClubRasima.Windows"
         mc:Ignorable="d"
-        Title="AuthWindow" Height="720" Width="1280" >
+        Title="ServiceWindow" Height="720" Width="1280" >
     
     <Grid>
 
@@ -38,7 +38,8 @@
                      FontSize="18"                   
                      Margin="8 0 0 0"
                      Width="200"
-                     Height="30" TextChanged="TbSearch_TextChanged"
+                     Height="30"
+                     TextChanged="TbSearch_TextChanged"
                      />
             
             <TextBlock 
@@ -56,6 +57,19 @@
                      />
 
         </WrapPanel>
+
+        <Button x:Name="BtnGoToCart"
+                Grid.Row="1"
+                HorizontalAlignment="Right"
+                FontSize="18"
+                Width="30"
+                Height="30"
+                Background="{x:Null}"
+                BorderThickness="0"
+                Margin="0 0 30 0"
+                Click="BtnGoToCart_Click">
+            <Image Source="resources/cart.png"/>
+        </Button>
 
         <ListView x:Name="lvService"
                   Grid.Row="2"
@@ -101,13 +115,38 @@
                                        FontSize="18"
                                        Margin="5 0 0 0"/>
 
-                            <Button x:Name="BtnEditService"
+                            <!--<Button x:Name="BtnEditService"
                                     Content="Изменить"
                                     FontSize="18"
                                     Width="150"
                                     Height="30"
                                     Margin="10"
-                                    Click="BtnEditService_Click"/>
+                                    Click="BtnEditService_Click"/>-->
+
+                            <WrapPanel HorizontalAlignment="Center">
+                                <Button x:Name="BtnEditService"
+                                        FontSize="18"
+                                        Width="30"
+                                        Height="30"
+                                        Background="{x:Null}"
+                                        BorderThickness="0"
+                                        Margin="10 0 40 0"
+                                        Click="BtnEditService_Click">
+                                    <Image Source="resources/edit.png"/>
+                                </Button>
+
+                                <Button x:Name="BtnCartService"
+                                        FontSize="18"
+                                        Width="30"
+                                        Height="30"
+                                        Background="{x:Null}"
+                                        BorderThickness="0"
+                                        Margin="40 0 10 0"
+                                        Click="BtnCartService_Click">
+                                    <Image Source="resources/cart.png"/>
+                                </Button>
+                            </WrapPanel>
+
                         </StackPanel>
                     </Border>
                 </DataTemplate>
