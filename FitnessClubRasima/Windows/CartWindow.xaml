@@ -42,7 +42,7 @@
                     <Border BorderBrush="DarkSlateGray"
                             BorderThickness="1"
                             Width="200"
-                            Height="280"
+                            Height="350"
                             Margin="8">
                         <StackPanel>
                             <Image x:Name="ServiceImage"
@@ -58,13 +58,34 @@
 
                             </Image>
 
-                            <TextBlock Text="{Binding NameService}"
+                            <TextBlock Text="{Binding Title}"
                                        FontSize="18"
                                        Margin="5 0 0 0"/>
-                            <TextBlock Text="{Binding PriceService}"
+
+                            <TextBlock
+                                Text="Цена:"
+                                FontSize="15"
+                                Margin="5 0 0 0"/>
+
+                            <TextBlock Text="{Binding Cost}"
                                        FontSize="18"
                                        Margin="5 0 0 0"/>
+
+                            <TextBlock
+                                Text="Описание:"
+                                FontSize="15"
+                                Margin="5 0 0 0"/>
+
                             <TextBlock Text="{Binding Description}"
+                                       FontSize="18"
+                                       Margin="5 0 0 0"/>
+
+                            <TextBlock
+                                Text="Длительность(минуты):"
+                                FontSize="15"
+                                Margin="5 0 0 0"/>
+
+                            <TextBlock Text="{Binding Time}"
                                        FontSize="18"
                                        Margin="5 0 0 0"/>
 

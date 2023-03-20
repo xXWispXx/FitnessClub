@@ -15,7 +15,7 @@ namespace FitnessClubRasima.DB
     public partial class OrderService
     {
         public int ID { get; set; }
-        public Nullable<int> OrderID { get; set; }
+        public int OrderID { get; set; }
         public int ServiceID { get; set; }
     
         public virtual Order Order { get; set; }

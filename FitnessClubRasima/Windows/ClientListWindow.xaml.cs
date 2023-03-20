@@ -26,14 +26,12 @@ namespace FitnessClubRasima.Windows
         List<string> listSort = new List<string>()
         {
             "По умолчанию",
-            "По названию (По возрастанию)",
-            "По названию (По убыванию)",
-            "По цене (По возрастанию)",
-            "По цене (По убыванию)",
-            "По описанию (По возрастанию)",
-            "По описанию (По убыванию)",
-            "По времени (По возрастанию)",
-            "По времени (По убыванию)",
+            "По имени (от А до Я)",
+            "По имени (от Я до А)",
+            "По фамилия (от А до Я)",
+            "По фамилия (от Я до А)",
+            "По отчество (от А до Я)",
+            "По отчество (от Я до А)",
         };
         public ClientListWindow()
         {
@@ -54,49 +52,41 @@ namespace FitnessClubRasima.Windows
             //поиск, фильтрация и сортировка
 
             //поиск
-            //Название
+            //Имя
             clientList = clientList.Where(i => i.FirstName.ToLower().Contains(TbSearch.Text.ToLower())).ToList();
 
+            //сортировка
+            var selectedIndexCmb = CmbSort.SelectedIndex;
 
-            //Описание
-            //serviceList = serviceList.Where(i => i.Description.Contains(TbSearch.Text)).ToList();
+            switch (selectedIndexCmb)
+            {
+                case 0:
+                    clientList = clientList.OrderBy(i => i.ClientID).ToList();
+                    break;
+                case 1:
+                    clientList = clientList.OrderBy(i => i.FirstName).ToList();
+                    break;
+                case 2:
+                    clientList = clientList.OrderByDescending(i => i.FirstName).ToList();
+                    break;
+                case 3:
+                    clientList = clientList.OrderBy(i => i.LastName).ToList();
+                    break;
+                case 4:
+                    clientList = clientList.OrderByDescending(i => i.LastName).ToList();
+                    break;
+                case 5:
+                    clientList = clientList.OrderBy(i => i.Patronymic).ToList();
+                    break;
+                case 6:
+                    clientList = clientList.OrderByDescending(i => i.Patronymic).ToList();
+                    break;
 
+                default:
+                    clientList = clientList.OrderBy(i => i.ClientID).ToList();
+                    break;
 
-            //Сортировка - пофиксить!
-            //var selectedIndexCmb = CmbSort.SelectedIndex;
-
-            //switch (selectedIndexCmb)
-            //{
-            //    case 0:
-            //        clientList = clientList.OrderBy(i => i.ClientID).ToList();
-            //        break;
-            //    case 1:
-            //        clientList = clientList.OrderBy(i => i.FirstName).ToList();
-            //        break;
-            //    case 2:
-            //        clientList = clientList.OrderByDescending(i => i.LastName).ToList();
-            //        break;
-            //    case 3:
-            //        clientList = clientList.OrderBy(i => i.Patronymic).ToList();
-            //        break;
-            //    case 4:
-            //        clientList = clientList.OrderByDescending(i => i.DateOfBirth).ToList();
-            //        break;
-            //    case 5:
-            //        clientList = clientList.OrderBy(i => i.Address).ToList();
-            //        break;
-            //    case 6:
-            //        clientList = clientList.OrderByDescending(i => i.Email).ToList();
-            //        break;
-            //    case 7:
-            //        clientList = clientList.OrderBy(i => i.Phone).ToList();
-            //        break;
-
-            //    default:
-            //        clientList = clientList.OrderBy(i => i.ClientID).ToList();
-            //        break;
-           
-            //}     
+            }
 
             //фильтрация
 

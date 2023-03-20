@@ -52,7 +52,7 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="OrderID" Type="int" />
+          <Property Name="OrderID" Type="int" Nullable="false" />
           <Property Name="ServiceID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Service">
@@ -131,7 +131,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_OrderService_Order">
-          <End Role="Order" Type="Self.Order" Multiplicity="0..1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="1" />
           <End Role="OrderService" Type="Self.OrderService" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Order">
@@ -386,7 +386,7 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="OrderID" Type="Int32" />
+          <Property Name="OrderID" Type="Int32" Nullable="false" />
           <Property Name="ServiceID" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Order" Relationship="FitnessClubRasimaModel.FK_OrderService_Order" FromRole="OrderService" ToRole="Order" />
           <NavigationProperty Name="Service" Relationship="FitnessClubRasimaModel.FK_OrderService_Service" FromRole="OrderService" ToRole="Service" />
@@ -472,7 +472,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_OrderService_Order">
-          <End Type="FitnessClubRasimaModel.Order" Role="Order" Multiplicity="0..1" />
+          <End Type="FitnessClubRasimaModel.Order" Role="Order" Multiplicity="1" />
           <End Type="FitnessClubRasimaModel.OrderService" Role="OrderService" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Order">

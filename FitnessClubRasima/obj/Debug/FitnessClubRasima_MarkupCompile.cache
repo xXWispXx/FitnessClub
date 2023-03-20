@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\App.xaml
-7308677653
+8-814596106
 2329840295
-2777579240
+28-1690340701
 18-650995295
-MainWindow.xaml;Windows\AddEditClientListWindow.xaml;Windows\AddEditServiceWindow.xaml;Windows\AuthWindow.xaml;Windows\ClientListWindow.xaml;Windows\RegWindow.xaml;Windows\ServiceWindow.xaml;
+MainWindow.xaml;Windows\AddEditClientListWindow.xaml;Windows\AddEditServiceWindow.xaml;Windows\AuthWindow.xaml;Windows\CartWindow.xaml;Windows\ClientListWindow.xaml;Windows\RegWindow.xaml;Windows\ServiceWindow.xaml;
 
-True
+False
 

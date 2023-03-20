@@ -123,6 +123,9 @@
     <Compile Include="Windows\AuthWindow.xaml.cs">
       <DependentUpon>AuthWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\CartWindow.xaml.cs">
+      <DependentUpon>CartWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\ClientListWindow.xaml.cs">
       <DependentUpon>ClientListWindow.xaml</DependentUpon>
     </Compile>
@@ -153,6 +156,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\AuthWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\CartWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -225,6 +232,9 @@
       <DependentUpon>FitnessDB.edmx</DependentUpon>
       <LastGenOutput>FitnessDB.cs</LastGenOutput>
     </Content>
+    <Resource Include="Windows\resources\remove.png" />
+    <Resource Include="Windows\resources\cart.png" />
+    <Resource Include="Windows\resources\edit.png" />
     <Resource Include="Windows\resources\Background1.jpg" />
     <Resource Include="Windows\resources\Nullservice.jpg" />
   </ItemGroup>

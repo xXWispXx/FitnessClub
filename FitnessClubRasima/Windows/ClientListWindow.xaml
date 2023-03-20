@@ -71,7 +71,7 @@
                     <Border BorderBrush="DarkSlateGray"
                             BorderThickness="1"
                             Width="250"
-                            Height="500"
+                            Height="650"
                             Margin="8">
                         <StackPanel>
                             <Image x:Name="ClientImage"
@@ -87,33 +87,87 @@
 
                             </Image>
 
+                            <TextBlock
+                                Text="Имя:"
+                                FontSize="15"
+                                Margin="5 0 0 0"/>
+
                             <TextBlock Text="{Binding FirstName}"
                                        FontSize="18"
                                        Margin="5 0 0 0"/>
+
+                            <TextBlock
+                                Text="Фамилия:"
+                                FontSize="15"
+                                Margin="5 0 0 0"/>
+
                             <TextBlock Text="{Binding LastName}"
                                        FontSize="18"
                                        Margin="5 0 0 0"/>
+
+                            <TextBlock
+                                Text="Отчество:"
+                                FontSize="15"
+                                Margin="5 0 0 0"/>
+
                             <TextBlock Text="{Binding Patronymic}"
                                        FontSize="18"
                                        Margin="5 0 0 0"/>
+
+                            <TextBlock
+                                Text="Телефон:"
+                                FontSize="15"
+                                Margin="5 0 0 0"/>
+
                             <TextBlock Text="{Binding Phone}"
                                        FontSize="18"
                                        Margin="5 0 0 0"/>
+
+                            <TextBlock
+                                Text="Почта:"
+                                FontSize="15"
+                                Margin="5 0 0 0"/>
+
                             <TextBlock Text="{Binding Email}"
                                        FontSize="18"
                                        Margin="5 0 0 0"/>
+
+                            <TextBlock
+                                Text="Серия паспорта:"
+                                FontSize="15"
+                                Margin="5 0 0 0"/>
+
                             <TextBlock Text="{Binding PassportSeries}"
                                        FontSize="18"
                                        Margin="5 0 0 0"/>
+
+                            <TextBlock
+                                Text="Номер паспорта:"
+                                FontSize="15"
+                                Margin="5 0 0 0"/>
+
                             <TextBlock Text="{Binding PassportNumber}"
                                        FontSize="18"
                                        Margin="5 0 0 0"/>
+
+                            <TextBlock
+                                Text="Пароль:"
+                                FontSize="15"
+                                Margin="5 0 0 0"/>
+
                             <TextBlock Text="{Binding Password}"
                                        FontSize="18"
                                        Margin="5 0 0 0"/>
+
+                            <TextBlock
+                                Text="Адрес клиента:"
+                                FontSize="15"
+                                Margin="5 0 0 0"/>
+
                             <TextBlock Text="{Binding Address}"
                                        FontSize="18"
                                        Margin="5 0 0 0"/>
+
                             <TextBlock Text="{Binding PhotoPath}"
                                        FontSize="18"
                                        Margin="5 0 0 0"/>

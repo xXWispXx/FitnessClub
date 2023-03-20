@@ -58,10 +58,6 @@ namespace FitnessClubRasima.Windows
             serviceList = serviceList.Where(i => i.Title.ToLower().Contains(TbSearch.Text.ToLower())).ToList();
 
 
-            //Описание
-            //serviceList = serviceList.Where(i => i.Description.Contains(TbSearch.Text)).ToList();
-
-
             //Сортировка
             var selectedIndexCmb = CmbSort.SelectedIndex;
 
