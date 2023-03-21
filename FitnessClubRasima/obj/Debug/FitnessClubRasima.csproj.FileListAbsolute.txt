@@ -35,3 +35,5 @@ C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\obj\Debug\Windo
 C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\obj\Debug\Windows\CartWindow.g.cs
 C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\obj\Debug\Windows\AddEditClientListWindow.baml
 C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\obj\Debug\Windows\CartWindow.baml
+C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\obj\Debug\Windows\PurchaseWindow.g.cs
+C:\Users\IMac10\source\repos\FitnessClubRasima\FitnessClubRasima\obj\Debug\Windows\PurchaseWindow.baml

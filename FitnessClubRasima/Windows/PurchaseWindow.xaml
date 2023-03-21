@@ -1,0 +1,42 @@
+﻿<Window x:Class="FitnessClubRasima.Windows.PurchaseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FitnessClubRasima.Windows"
+        mc:Ignorable="d"
+        Title="PurchaseWindow" Height="720" Width="1280" >
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="resources/Background1.jpg" />
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="500"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <StackPanel
+            
+            <TextBlock 
+                
+                Grid.Row="0"
+                Text="Уверены ли вы что хотите купить"/>
+
+
+
+            />
+
+        <WrapPanel Grid.Row="1"
+                   
+                   
+                   
+                   
+                   
+                   
+                   />
+    </Grid>
+</Window>

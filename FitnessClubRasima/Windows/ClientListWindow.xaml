@@ -60,7 +60,7 @@
                   Grid.Row="2"
                   Margin="5" 
                   d:ItemsSource="{d:SampleData ItemCount=5}"
-                  ScrollViewer.HorizontalScrollBarVisibility="Disabled" >
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="lvClient_SelectionChanged" >
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel/>

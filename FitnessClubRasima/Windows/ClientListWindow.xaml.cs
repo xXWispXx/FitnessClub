@@ -127,5 +127,10 @@ namespace FitnessClubRasima.Windows
         {
             GetClientList();
         }
+
+        private void lvClient_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
